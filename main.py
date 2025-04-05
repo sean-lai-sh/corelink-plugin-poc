@@ -7,7 +7,7 @@ load_dotenv()
 sys.path.append(os.getenv("CL_EXP_PATH"))
 
 import corelink
-import numpy as np
+
 
 from corelink import processing
 
