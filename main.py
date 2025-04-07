@@ -16,9 +16,28 @@ import numpy as np
 from ultralytics import YOLO
 
 
+def findHuman(results):
+    for result in results:
+        boxes = result.boxes.cpu().numpy()
+        
+        # Get all detected objects in this frame
+        class_ids = boxes.cls
+        confidences = boxes.conf
+        xyxys = boxes.xyxy
+        
+        # Check if any detection is a person
+        for i, class_id in enumerate(class_ids):
+            class_name = result.names[int(class_id)]
+            if class_name == "person":
+                print(f"Found human with confidence {confidences[i]:.2f} at {xyxys[i]}")
+                return (True, xyxys[i])
+    
+    return (False, None)
+
 def main():
     cap = cv2.VideoCapture(0)
     model = YOLO("yolov8n.pt")
+    model.fuse()
     if not cap.isOpened():
         print("Error: Could not open video.")
         return
@@ -29,11 +48,17 @@ def main():
             break
 
         # Process the frame using YOLOv8
-        results = model.predict(frame, conf=0.5, show=True)
+        results = model(frame, conf=0.5)
         
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        findHuman(results)
+        ## Pause until I press 'a' to continue
+        key = cv2.waitKey(1) & 0xFF
+    
+        if key == ord('a'):
+            print("Continuing to next frame")
+            continue
+        elif key == ord('q'):
             cap.release()
             cv2.destroyAllWindows()
             break
-
 main()
