@@ -13,3 +13,7 @@ Take imaging and first step is a grayscale filtering (a simple plugin) then send
 #### installation
 
 ```Run pip install -r requirements.txt```
+
+Alternatively
+
+```conda create -f env.yaml```
