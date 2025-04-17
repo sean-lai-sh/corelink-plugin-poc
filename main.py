@@ -30,7 +30,7 @@ def main():
             found, human_box = find_human(results)
 
             if found:
-                frame, gesture = detect_hands_in_human_box(frame, human_box, hands)
+                frame, gesture = detect_hands_in_box(frame, human_box, hands)
                 print(inference(frame))
 
             cv2.imshow("YOLO + MediaPipe Hands", frame)
