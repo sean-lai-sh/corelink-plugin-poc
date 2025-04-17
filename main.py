@@ -17,6 +17,8 @@ from ultralytics import YOLO
 import mediapipe as mp
 import math
 
+from handestimation import inference
+
 # CONSTANTS
 mp_hands_draw = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
@@ -53,7 +55,7 @@ def detect_hands_in_human_box(frame, box_xyxy, hands):
 
     # Crop the region of interest
     cropped = frame[y_min:y_max, x_min:x_max]
-
+    gesture = None
     # Convert to RGB for MediaPipe
     rgb_cropped = cv2.cvtColor(cropped, cv2.COLOR_BGR2RGB)
 
@@ -123,7 +125,7 @@ def main():
 
             if found:
                 frame, gesture = detect_hands_in_human_box(frame, human_box, hands)
-                print(gesture)
+                print(inference(frame))
 
             cv2.imshow("YOLO + MediaPipe Hands", frame)
 
