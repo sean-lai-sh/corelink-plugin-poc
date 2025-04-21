@@ -1,3 +1,4 @@
+from asyncio import sleep
 from transformers import pipeline
 from PIL import Image
 import cv2
@@ -19,7 +20,6 @@ def inference(image):
     pil_image = Image.fromarray(cv2_image_rgb)
     # Perform inference
     results = pipe(pil_image)
-    
     # Extract the label from the results
     label = results[0]['label']
     print(label)
@@ -28,15 +28,19 @@ def inference(image):
 
 async def call_back(databytes, streamID):
     s_ids = await corelink.list_streams("Holodeck")
-    if(print())
-
+    # find id that matches our metadata
+    for id in s_ids:
+        if id["metadata"] == "handest1mation":
+            streamID = id["streamID"]
+            break
 
 
 async def main():
     await corelink.connect("Testuser", "Testpassword", "127.0.0.1", "20012")
     await corelink.set_data_callback(inference)
+    await corelink.set_server_callback(call_back, key="update")
     StreamID = await corelink.create_receiver("Holodeck", "tcp", alert=True, echo=True)
-    senderID = await corelink.create_sender("Holodeck", "tcp", "testing")
+    senderID = await corelink.create_sender("Holodeck", "tcp", "testing", metadata="handest1mation")
     await corelink.processing.connect_receiver(StreamID)
     # While true:
 
@@ -51,30 +55,38 @@ class connectionInfo:
         self.port = port
 
 class cl_plugin:
-    def __init__(self, connect, recieve_info, meta="default plugin"):
-        self.connection = connect
-        self.meta = meta
-        self.callback = None
-        self.recieve_streamID = None
-        self.pipe = pipeline("image-classification", model="dima806/hand_gestures_image_detection", use_fast=True)
-    
-    async def run_plugin(self, callback):
-        self.callback = callback
-        while True:
-            data = self.recieve()
-            if data:
-                # Process the received data
-                print(f"Received data: {data}")
-                # Call the callback function with the received data
-                self.callback(data)
-            else:
-                break
+    def __init__(self, workspaceInfo: connectionInfo, recieverInfo, senderInfo, data_callback = None):
+        self.workspaceInfo = workspaceInfo
+        self.recieverInfo = recieverInfo
+        self.senderInfo = senderInfo
+        self.callback = data_callback
+        self.sender_streamID = None
+        self.receive_streamID = None
 
-    async def get_reciever(self, callback):
-        if self.callback is None:
-            self.callback = callback
-        await corelink.set_data_callback(self.callback)
+    @property
+    def callback(self): #TODO: impl this to on update of server identify which stream matches via metadata of receiver. then connect to that stream
+        return "this works :)"
+    
+    
+    def set_callback(self, callback):
+        self.callback = callback
+
+    async def launch(self):
+        ## Step 0; Init corelink workspace :)
+        await corelink.connect(self.workspaceInfo.user, self.workspaceInfo.password, self.workspaceInfo.ip, self.workspaceInfo.port)
+        ## step1; Init corelink sender
+        self.sender_streamID = await corelink.create_sender(self.senderInfo.workspace, self.senderInfo.protocol, self.senderInfo.name, metadata=self.senderInfo.metadata)
+        ## setup to ensure our server callback is running (our own internal function)
+        await corelink.set_server_callback(self.callback, key="update")
+        ## step 2; Init corelink receiver
         
+
+    async def run(self):
+        # Run during the loop 
+        # run our send function
+        self.launch()
+
+
 
 
     
