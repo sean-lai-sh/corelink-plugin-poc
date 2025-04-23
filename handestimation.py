@@ -23,70 +23,26 @@ def inference(image):
     # Extract the label from the results
     label = results[0]['label']
     print(label)
+    # Send the label to the Corelink server
+    list = corelink.list_streams(workspaces=["Holodeck"])
+    corelink.send_data(senderID, label.encode("utf-8"), metadata="hand_gesture")
     return label
-
-
-async def call_back(databytes, streamID):
-    s_ids = await corelink.list_streams("Holodeck")
-    # find id that matches our metadata
-    for id in s_ids:
-        if id["metadata"] == "handest1mation":
-            streamID = id["streamID"]
-            break
-
 
 async def main():
     await corelink.connect("Testuser", "Testpassword", "127.0.0.1", "20012")
     await corelink.set_data_callback(inference)
-    await corelink.set_server_callback(call_back, key="update")
-    StreamID = await corelink.create_receiver("Holodeck", "tcp", alert=True, echo=True)
-    senderID = await corelink.create_sender("Holodeck", "tcp", "testing", metadata="handest1mation")
-    await corelink.processing.connect_receiver(StreamID)
+    StreamID = None
+    meta = "cv2imgin"
+    senderID = await corelink.create_sender("Holodeck", "tcp", "testing", metadata="hand_gesture")
+    while StreamID is None:
+        streamList = await corelink.list_streams(workspaces=["Holodeck"])
+        for stream in streamList:
+            if stream["metadata"] == meta:
+                StreamID = await corelink.create_receiver("Holodeck", "tcp", metadata="inference",stream_id=stream["streamID"])
+                print("subscribed to a steam")
+                break
+
+    
     # While true:
-
-        
-
-
-class connectionInfo:
-    def __init__(self, user, password, ip, port):
-        self.user = user
-        self.password = password
-        self.ip = ip
-        self.port = port
-
-class cl_plugin:
-    def __init__(self, workspaceInfo: connectionInfo, recieverInfo, senderInfo, data_callback = None):
-        self.workspaceInfo = workspaceInfo
-        self.recieverInfo = recieverInfo
-        self.senderInfo = senderInfo
-        self.callback = data_callback
-        self.sender_streamID = None
-        self.receive_streamID = None
-
-    @property
-    def callback(self): #TODO: impl this to on update of server identify which stream matches via metadata of receiver. then connect to that stream
-        return "this works :)"
-    
-    
-    def set_callback(self, callback):
-        self.callback = callback
-
-    async def launch(self):
-        ## Step 0; Init corelink workspace :)
-        await corelink.connect(self.workspaceInfo.user, self.workspaceInfo.password, self.workspaceInfo.ip, self.workspaceInfo.port)
-        ## step1; Init corelink sender
-        self.sender_streamID = await corelink.create_sender(self.senderInfo.workspace, self.senderInfo.protocol, self.senderInfo.name, metadata=self.senderInfo.metadata)
-        ## setup to ensure our server callback is running (our own internal function)
-        await corelink.set_server_callback(self.callback, key="update")
-        ## step 2; Init corelink receiver
-        
-
-    async def run(self):
-        # Run during the loop 
-        # run our send function
-        self.launch()
-
-
-
 
     
