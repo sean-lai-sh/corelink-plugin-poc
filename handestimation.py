@@ -1,3 +1,4 @@
+from asyncio import sleep
 from transformers import pipeline
 from PIL import Image
 import cv2
@@ -19,62 +20,29 @@ def inference(image):
     pil_image = Image.fromarray(cv2_image_rgb)
     # Perform inference
     results = pipe(pil_image)
-    
     # Extract the label from the results
     label = results[0]['label']
     print(label)
+    # Send the label to the Corelink server
+    list = corelink.list_streams(workspaces=["Holodeck"])
+    corelink.send_data(senderID, label.encode("utf-8"), metadata="hand_gesture")
     return label
 
+async def main():
+    await corelink.connect("Testuser", "Testpassword", "127.0.0.1", "20012")
+    await corelink.set_data_callback(inference)
+    StreamID = None
+    meta = "cv2imgin"
+    senderID = await corelink.create_sender("Holodeck", "tcp", "testing", metadata="hand_gesture")
+    while StreamID is None:
+        streamList = await corelink.list_streams(workspaces=["Holodeck"])
+        for stream in streamList:
+            if stream["metadata"] == meta:
+                StreamID = await corelink.create_receiver("Holodeck", "tcp", metadata="inference",stream_id=stream["streamID"])
+                print("subscribed to a steam")
+                break
 
-# async def call_back(databytes, streamID):
-#     s_ids = await corelink.list_streams("Holodeck")
-#     if(print())
-
-
-
-# async def main():
-#     await corelink.connect("Testuser", "Testpassword", "127.0.0.1", "20012")
-#     await corelink.set_data_callback(inference)
-#     StreamID = await corelink.create_receiver("Holodeck", "tcp", alert=True, echo=True)
-#     senderID = await corelink.create_sender("Holodeck", "tcp", "testing")
-#     await corelink.processing.connect_receiver(StreamID)
-#     # While true:
-
-        
-
-
-# class connectionInfo:
-#     def __init__(self, user, password, ip, port):
-#         self.user = user
-#         self.password = password
-#         self.ip = ip
-#         self.port = port
-
-# class cl_plugin:
-#     def __init__(self, connect, recieve_info, meta="default plugin"):
-#         self.connection = connect
-#         self.meta = meta
-#         self.callback = None
-#         self.recieve_streamID = None
-#         self.pipe = pipeline("image-classification", model="dima806/hand_gestures_image_detection", use_fast=True)
     
-#     async def run_plugin(self, callback):
-#         self.callback = callback
-#         while True:
-#             data = self.recieve()
-#             if data:
-#                 # Process the received data
-#                 print(f"Received data: {data}")
-#                 # Call the callback function with the received data
-#                 self.callback(data)
-#             else:
-#                 break
-
-#     async def get_reciever(self, callback):
-#         if self.callback is None:
-#             self.callback = callback
-#         await corelink.set_data_callback(self.callback)
-        
-
+    # While true:
 
     
