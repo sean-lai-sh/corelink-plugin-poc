@@ -1,6 +1,6 @@
 import cv2
 from ultralytics import YOLO
-import mediapipe as mp
+
 from vision.human_detection import find_human
 from vision.hand_detection import detect_hands_in_box
 from handestimation import inference
