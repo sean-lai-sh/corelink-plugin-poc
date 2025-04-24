@@ -11,6 +11,8 @@ from PIL import Image
 import cv2
 pipe = pipeline("image-classification", model="dima806/hand_gestures_image_detection", use_fast=True)
 
+senderID = None
+receiverID = None
 
 def inference(image):
     """
