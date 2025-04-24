@@ -1,7 +1,10 @@
 import time
 import numpy as np
+from dotenv import load_dotenv
+import os
 import sys
-sys.path.append("C:/Users/seanl/HSRN/corelink-pyclient/python/package/Corelink/src")
+load_dotenv()
+sys.path.append(os.getenv("CL_PATH"))
 import corelink
 
 def generate_permutations(s):

@@ -1,0 +1,110 @@
+2025-04-23 10:43:36,874 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<ws_control_receiver() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/processing.py:12> exception=ConnectionClosedError(None, None, None)>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/processing.py", line 14, in ws_control_receiver
+    async for message in stream:
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/site-packages/websockets/asyncio/connection.py", line 242, in __aiter__
+    yield await self.recv()
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/site-packages/websockets/asyncio/connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+2025-04-23 10:44:02,877 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:12,878 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:22,889 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:22,889 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:32,897 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:42,908 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:46:09,467 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:19,475 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:19,476 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:29,488 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:39,489 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:39,489 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:49,500 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:59,510 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:09,520 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:09,521 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:19,532 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:19,533 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:49,566 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:49,567 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte

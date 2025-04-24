@@ -1,8 +1,14 @@
+from dotenv import load_dotenv
+import os
+import sys
+load_dotenv()
+sys.path.append(os.getenv("CL_PATH"))
+import corelink # type: ignore
+
 from asyncio import sleep
 from transformers import pipeline
 from PIL import Image
 import cv2
-# import corelink
 pipe = pipeline("image-classification", model="dima806/hand_gestures_image_detection", use_fast=True)
 
 

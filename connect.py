@@ -1,24 +1,38 @@
+# Load from custom experimental version of Corelink
+from dotenv import load_dotenv
+import os
 import sys
-import time
-sys.path.append("C:/Users/seanl/HSRN/corelink-pyclient/python/package/Corelink/src")
-import threading
+load_dotenv()
+sys.path.append(os.getenv("CL_PATH"))
 
+## Corelink libs
 import corelink
-import numpy as np
-
 from corelink import processing
 
-import base64
+## Checking for logging
+isLogging = os.getenv("ENABLE_LOGS")
+import logging
+if isLogging == "True":
+    # Configure logging
+    logging.basicConfig(
+        filename='log.txt',
+        filemode='a',  # append mode
+        format='%(asctime)s [%(levelname)s] %(message)s',
+        level=logging.INFO
+    )
+
 
 senderID = None
 receiverID = None
 
 async def byte_to_string(data_bytes , streamID, header):
-    #print("streamID ",streamID, " Data bytes ", data_bytes, " header ",header,"\n")
-    string_data = data_bytes.decode('utf-8')
-    print("RECIEVING WORD ", string_data)
+    try: #print("streamID ",streamID, " Data bytes ", data_bytes, " header ",header,"\n")
+        string_data = data_bytes.decode('utf-8')
+        print("RECIEVING WORD ", string_data)
+    except Exception as err:
+        logging.exception("Error: %s", err)
     # print(await corelink.list_streams(workspaces=["Holodeck"]))
-    await corelink.send(senderID, string_data)
+    # await corelink.send(senderID, string_data) 
 
 async def changeReceiver(response, key):
     lst = await corelink.list_streams(workspaces="Holodeck")
@@ -38,10 +52,10 @@ async def main():
         stream_lists = await corelink.list_streams(workspaces=["Holodeck"])
         for stream in stream_lists:
             if stream["meta"] == "cv2imgin":
-                
                 receiverID = await corelink.create_receiver("Holodeck", "tcp", metadata=stream['meta'], alert=True, echo=True)
                 print("Successfully created reciever with ID: ", receiverID)
                 break
+        await corelink.asyncio.sleep(10)
 
     while True:
         await corelink.asyncio.sleep(10000)  # Sleep for 10 seconds
