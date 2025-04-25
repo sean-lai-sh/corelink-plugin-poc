@@ -26,13 +26,10 @@ senderID = None
 receiverID = None
 
 async def byte_to_string(data_bytes , streamID, header):
-    try: #print("streamID ",streamID, " Data bytes ", data_bytes, " header ",header,"\n")
-        string_data = data_bytes.decode('utf-8')
-        print("RECIEVING WORD ", string_data)
-    except Exception as err:
-        logging.exception("Error: %s", err)
+    string_data = data_bytes.decode('utf-8')
+    print("RECIEVING WORD ", string_data)
     # print(await corelink.list_streams(workspaces=["Holodeck"]))
-    # await corelink.send(senderID, string_data) 
+    await corelink.send(senderID, string_data) 
 
 async def changeReceiver(response, key):
     lst = await corelink.list_streams(workspaces="Holodeck")
@@ -52,7 +49,8 @@ async def main():
         stream_lists = await corelink.list_streams(workspaces=["Holodeck"])
         for stream in stream_lists:
             if stream["meta"] == "cv2imgin":
-                receiverID = await corelink.create_receiver("Holodeck", "tcp", metadata=stream['meta'], alert=True, echo=True)
+                receiverID = await corelink.create_receiver("Holodeck", "tcp", metadata=stream['meta'], alert=True, echo=True, subscribe=False)
+                await corelink.subscribe_to_stream(receiverID, stream["streamID"])
                 print("Successfully created reciever with ID: ", receiverID)
                 break
         await corelink.asyncio.sleep(10)
