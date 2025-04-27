@@ -1,14 +1,26 @@
+# Load from custom experimental version of Corelink
+from dotenv import load_dotenv
+import os
 import sys
-import time
-sys.path.append("C:/Users/seanl/HSRN/corelink-pyclient/python/package/Corelink/src")
-import threading
+load_dotenv()
+sys.path.append(os.getenv("CL_PATH"))
 
+## Corelink libs
 import corelink
-import numpy as np
-
 from corelink import processing
 
-import base64
+## Checking for logging
+isLogging = os.getenv("ENABLE_LOGS")
+import logging
+if isLogging == "True":
+    # Configure logging
+    logging.basicConfig(
+        filename='log.txt',
+        filemode='a',  # append mode
+        format='%(asctime)s [%(levelname)s] %(message)s',
+        level=logging.INFO
+    )
+
 
 senderID = None
 receiverID = None

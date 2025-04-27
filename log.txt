@@ -1,0 +1,1006 @@
+2025-04-23 10:43:36,874 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<ws_control_receiver() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/processing.py:12> exception=ConnectionClosedError(None, None, None)>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/processing.py", line 14, in ws_control_receiver
+    async for message in stream:
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/site-packages/websockets/asyncio/connection.py", line 242, in __aiter__
+    yield await self.recv()
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/site-packages/websockets/asyncio/connection.py", line 322, in recv
+    raise self.protocol.close_exc from self.recv_exc
+websockets.exceptions.ConnectionClosedError: no close frame received or sent
+2025-04-23 10:44:02,877 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:12,878 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:22,889 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:22,889 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:32,897 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:44:42,908 [ERROR] Error: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xeb in position 10: invalid continuation byte
+2025-04-23 10:46:09,467 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:19,475 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:19,476 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:29,488 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:39,489 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:39,489 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:49,500 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:46:59,510 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:09,520 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:09,521 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:19,532 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:19,533 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:49,566 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-23 10:47:49,567 [ERROR] Error: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 30, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 10: invalid start byte
+2025-04-24 20:36:58,383 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541418383 Finished subscriber update (2).\x00\x00\x9b\x00\x00\x00\x00\x001745541418383 trying to send subscriber update: {"function":"subscriber","receiverID":11508,"senderID":45670,"user":"Testuser","type":"","meta":"cv2imgin"}\x00\x00g\x00\x00\x00\x00\x001745541418383 updating sender: a01e49372cee0856c0a50336438ca2281731ce24b7b00d48eb0c9a414849b603 : 45670', 47, 48, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9b in position 47: invalid start byte
+2025-04-24 20:36:58,386 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541418383 Finished subscriber update (2).\x00\x00\x1d\x00\x00\x00\x00\x001745541418383 [object Object]\x00\x00\x18\x01\x00\x00\x00\x001745541418383 sending:{"statusCode":0,"streamList":[{"streamID":0,"type":"LogStream","user":"","apps":[]},{"streamID":40496,"type":"string","meta":"hand_gesture","user":"Testuser","apps":[]},{"streamID":45670,"type":"string","meta":"cv2imgin","user":"Testuser","apps":[]}],"ID":6}\x00\x001\x00\x00\x00\x00\x001745541418384 receiving 40496 b274 h0 d266 from :\x00\x00;\x00\x00\x00\x00\x001745541418384 sending 40496 b274 h0 d266 to 127.0.0.1:37690\x00\x00\n\x010\x9e\x00\x001745541418382 trying to send subscriber update: {"function":"subscriber","receiverID":11508,"senderID":40496,"user":"Testuser","type":"","meta":"cv2imgin"}\x00\x00g\x00\x00\x00\x00\x001745541418383 updating sender: 2db1c087202cc323df23ca71d84631a8a09ad2edca61cb43ef1a4a544d62bcec : 40496', 499, 500, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9e in position 499: invalid start byte
+2025-04-24 20:37:00,311 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541420311 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 0}ollhe', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 62: invalid start byte
+2025-04-24 20:37:00,312 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541420311 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420311 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 1}lolhe\x00\x00/\x00\x00\x00\x00\x001745541420311 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420312 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 2}llohe\x00\x00/\x00\x00\x00\x00\x001745541420312 receiving 45670 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:00,312 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541420312 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 3}ohlel\x00\x00/\x00\x00\x00\x00\x001745541420312 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420312 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 4}elloh', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 62: invalid start byte
+2025-04-24 20:37:00,313 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541420312 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420312 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 5}elhol\x00\x00/\x00\x00\x00\x00\x001745541420312 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420312 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 6}llohe\x00\x00/\x00\x00\x00\x00\x001745541420312 receiving 45670 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:00,313 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541420313 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 7}lhelo\x00\x00/\x00\x00\x00\x00\x001745541420313 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420313 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 8}lohel\x00\x00/\x00\x00\x00\x00\x001745541420313 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420313 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 9}olhel', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 62: invalid start byte
+2025-04-24 20:37:00,314 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541420313 receiving 45670 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541420313 sending 45670 b26 h13 d5 to 127.0.0.1:37690\r\x00\x05\x00f\xb2\x00\x00{"count": 10}holel\x00\x00/\x00\x00\x00\x00\x001745541420313 receiving 40496 b55 h0 d47 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:00,314 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541420313 sending 40496 b55 h0 d47 to 127.0.0.1:37690\x00\x00/\x000\x9e\x00\x001745541420310 receiving 45670 b25 h12 d5 from :', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9e in position 62: invalid start byte
+2025-04-24 20:37:10,322 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541430322 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430322 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 0}lhelo', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:10,323 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541430322 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430322 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 1}lhloe\x00\x00/\x00\x00\x00\x00\x001745541430322 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430322 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 2}lhleo\x00\x00/\x00\x00\x00\x00\x001745541430322 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430323 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 3}olhle\x00\x00/\x00\x00\x00\x00\x001745541430323 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430323 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 4}leloh\x00\x00/\x00\x00\x00\x00\x001745541430323 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430323 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 5}oehll', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:10,324 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541430323 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430323 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 6}holel\x00\x00/\x00\x00\x00\x00\x001745541430323 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430323 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 7}eholl\x00\x00/\x00\x00\x00\x00\x001745541430323 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430323 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 8}lleho\x00\x00/\x00\x00\x00\x00\x001745541430323 receiving 45670 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:10,324 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541430323 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 9}hlloe\x00\x00/\x00\x00\x00\x00\x001745541430324 receiving 45670 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541430324 sending 45670 b26 h13 d5 to 127.0.0.1:37690\r\x00\x05\x00f\xb2\x00\x00{"count": 10}hello', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 62: invalid start byte
+2025-04-24 20:37:20,333 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541440333 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 0}olhle', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 62: invalid start byte
+2025-04-24 20:37:20,334 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-29' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541440333 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440333 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 1}ohlel\x00\x00/\x00\x00\x00\x00\x001745541440333 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440333 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 2}loehl\x00\x00/\x00\x00\x00\x00\x001745541440333 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440333 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 3}hleol\x00\x00/\x00\x00\x00\x00\x001745541440333 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440334 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 4}elhol', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:20,335 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541440334 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440334 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 5}lheol\x00\x00/\x00\x00\x00\x00\x001745541440334 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440334 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 6}leloh\x00\x00/\x00\x00\x00\x00\x001745541440334 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440334 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 7}loehl\x00\x00/\x00\x00\x00\x00\x001745541440334 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440334 sending 45670 b25 h12 d5 to 127.0.0.1:37690', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:20,335 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'ohlel\x00\x00/\x00\x00\x00\x00\x001745541440334 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541440334 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 9}lleoh\x00\x00/\x00\x00\x00\x00\x001745541440334 receiving 40496 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541440334 sending 40496 b55 h0 d47 to 127.0.0.1:37690\x00\x00/\x000\x9e\x00\x001745541440332 receiving 45670 b25 h12 d5 from :\x00\x00/\x00\x00\x00\x00\x001745541440335 receiving 45670 b26 h13 d5 from :', 130, 131, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 130: invalid start byte
+2025-04-24 20:37:20,336 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541440335 sending 45670 b26 h13 d5 to 127.0.0.1:37690\r\x00\x05\x00f\xb2\x00\x00{"count": 10}ehlol', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 62: invalid start byte
+2025-04-24 20:37:30,344 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541450343 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450344 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 0}eholl', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:30,345 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541450344 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450344 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 1}hlleo\x00\x00/\x00\x00\x00\x00\x001745541450344 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450344 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 2}eolhl\x00\x00/\x00\x00\x00\x00\x001745541450344 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450344 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 3}lheol\x00\x00/\x00\x00\x00\x00\x001745541450344 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450345 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 4}olhel', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:30,345 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-35' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541450345 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450345 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 5}lehol\x00\x00/\x00\x00\x00\x00\x001745541450345 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450345 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 6}lehol\x00\x00/\x00\x00\x00\x00\x001745541450345 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450345 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 7}leolh', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:30,346 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-36' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541450345 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450345 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 8}hello\x00\x00/\x00\x00\x00\x00\x001745541450345 receiving 45670 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450345 sending 45670 b25 h12 d5 to 127.0.0.1:37690\x0c\x00\x05\x00f\xb2\x00\x00{"count": 9}ehllo', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:30,346 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-37' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541450346 receiving 45670 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541450346 sending 45670 b26 h13 d5 to 127.0.0.1:37690\r\x00\x05\x00f\xb2\x00\x00{"count": 10}hlole', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 117: invalid start byte
+2025-04-24 20:37:34,198 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-39' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:37:34,202 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-40' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541454198 ws connection control from 127.0.0.1: {"function": "disconnect", "token": "2db1c087202cc323df23ca71d84631a8a09ad2edca61cb43ef1a4a544d62bcec", "streamIDs": [40496], "ID": 7}\x00\x00 \x00\x00\x00\x00\x001745541454198 *** disconnect ***\x00\x00\x1d\x00\x00\x00\x00\x001745541454198 [object Object]\x00\x00U\x00\x00\x00\x00\x001745541454198 token: 2db1c087202cc323df23ca71d84631a8a09ad2edca61cb43ef1a4a544d62bcec\x00\x00\x1d\x00\x00\x00\x00\x001745541454199 deleting: 40496\x00\x00&\x00\x00\x00\x00\x001745541454199 cleaning up stream 40496\x00\x00H\x00\x00\x00\x00\x001745541454199 trying to send stale {"function":"stale","streamID":40496}\x00\x00g\x00\x00\x00\x00\x001745541454199 updating client: 2db1c087202cc323df23ca71d84631a8a09ad2edca61cb43ef1a4a544d62bcec : 11508\x00\x00\x1d\x00\x00\x00\x00\x001745541454200 listing streams\x00\x00\x85\x00\x00\x00\x00\x001745541454200 token: 6d0dae12a619291278e73c4024bc75bea2b04e152be42d18da02d1230424e720, user: Testuser, streams: , time: 1745541254034\x00\x00\x85\x00\x00\x00\x00\x001745541454200 token: 82651c35764a73caa7c4ee21064bfcc24995fa2839f324dd85e11b1743ac2994, user: Testuser, streams: , time: 1745541262089\x00\x00\x85\x00\x00\x00\x00\x001745541454200 token: dc46249c34294651643841b9856f1dd1a5fba4ce5b9507f4380e16e323fb8700, user: Testuser, streams: , time: 1745541362635\x00\x00\x85\x00\x00\x00\x00\x001745541454200 token: f462cde887460d4a911aa980456453d4c5ebbfb00a546814f7fd8858b9c37dea, user: Testuser, streams: , time: 1745541364931\x00\x00\x8a\x00\x00\x00\x00\x001745541454200 token: 2db1c087202cc323df23ca71d84631a8a09ad2edca61cb43ef1a4a544d62bcec, user: Testuser, streams: 11508, time: 1745541408071\x00\x00\x8a\x00\x00\x00\x00\x001745541454200 token: a01e49372cee0856c0a50336438ca2281731ce24b7b00d48eb0c9a414849b603, user: Testuser, streams: 45670, time: 1745541410205\x00\x00>\x00\x00\x00\x00\x001745541454200 token: !log, app: LogStream, streams: 0, time: 0\x00\x00@\x00\x00\x00\x00\x001745541454200 token: !dfshdgs, app: Test App, streams: , time: 0\x00\x00B\x00\x00\x00\x00\x001745541454200 token: !kljhkl, app: Vive Avatar, streams: , time: 0\x00\x00R\x00\x00\x00\x00\x001745541454200 token: !gfhdgh, app: Hanging out on the Holodeck, streams: , time: 0\x00\x00\x93\x00\x00\x00\x00\x001745541454200 source: 0, User: undefined, IP: :0, proto: local, workspace: Log, alert: false, type: LogStream, time: 1745541454200, from: LogStream\x00\x00\x8d\x00\x00\x00\x00\x001745541454200 source: 45670, User: undefined, IP: :, proto: tcp, workspace: Holodeck, alert: false, type: string, time: 1745541450346, from: \x00\x00{\x00\x00\x00\x00\x001745541454200 target: 11508, IP: 127.0.0.1:37690, proto: tcp, workspace: Holodeck, alert: true, type: , time: 1745541454200\x00\x00!\x00\x00\x00\x00\x001745541454200 relaying 0 -> 11508\x00\x00%\x00\x00\x00\x00\x001745541454200 relaying 45670 -> 11508', 669, 670, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x85 in position 669: invalid start byte
+2025-04-24 20:37:34,217 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-42' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:37:34,217 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-43' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:37:57,187 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477186 sending 22598 b163 h0 d155 to 127.0.0.1:58446\x00\x00\x9b\x00FX\x00\x001745541477183 trying to send subscriber update: {"function":"subscriber","receiverID":49459,"senderID":22598,"user":"Testuser","type":"","meta":"cv2imgin"}', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9b in position 61: invalid start byte
+2025-04-24 20:37:57,188 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477186 receiving 22598 b111 h0 d103 from :\x00\x00;\x00\x00\x00\x00\x001745541477186 sending 22598 b111 h0 d103 to 127.0.0.1:58446\x00\x00g\x00FX\x00\x001745541477183 updating sender: 1a2f1c7ad5ac7935fb8455c37913f65b0a6f246e475826ba4fbf658ddbdce0e5 : 22598\x00\x00/\x00\x00\x00\x00\x001745541477187 receiving 22598 b53 h0 d45 from :\x00\x009\x00\x00\x00\x00\x001745541477187 sending 22598 b53 h0 d45 to 127.0.0.1:58446\x00\x00-\x00FX\x00\x001745541477184 Finished subscriber update (2).\x00\x001\x00\x00\x00\x00\x001745541477187 receiving 22598 b163 h0 d155 from :\x00\x00;\x00\x00\x00\x00\x001745541477187 sending 22598 b163 h0 d155 to 127.0.0.1:58446\x00\x00\x9b\x00FX\x00\x001745541477184 trying to send subscriber update: {"function":"subscriber","receiverID":49459,"senderID":43578,"user":"Testuser","type":"","meta":"cv2imgin"}\x00\x001\x00\x00\x00\x00\x001745541477187 receiving 22598 b111 h0 d103 from :\x00\x00;\x00\x00\x00\x00\x001745541477187 sending 22598 b111 h0 d103 to 127.0.0.1:58446\x00\x00g\x00FX\x00\x001745541477184 updating sender: 662431026625501bbd8f6ae1409e71e0c437642712db5c1df691dedb93ad45c4 : 43578\x00\x00/\x00\x00\x00\x00\x001745541477188 receiving 22598 b53 h0 d45 from :', 526, 527, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x9b in position 526: invalid start byte
+2025-04-24 20:37:57,190 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477189 sending 22598 b687 h0 d679 to 127.0.0.1:58446\x00\x00\xa7\x02FX\x00\x001745541477188 sending 22598 b53 h0 d45 to 127.0.0.1:58446\x00\x00-\x00FX\x00\x001745541477185 Finished subscriber update (2).\x00\x00/\x00\x00\x00\x00\x001745541477188 receiving 22598 b37 h0 d29 from :\x00\x009\x00\x00\x00\x00\x001745541477188 sending 22598 b37 h0 d29 to 127.0.0.1:58446\x00\x00\x1d\x00FX\x00\x001745541477185 [object Object]\x00\x001\x00\x00\x00\x00\x001745541477188 receiving 22598 b288 h0 d280 from :\x00\x00;\x00\x00\x00\x00\x001745541477188 sending 22598 b288 h0 d280 to 127.0.0.1:58446\x00\x00\x18\x01FX\x00\x001745541477185 sending:{"statusCode":0,"streamList":[{"streamID":0,"type":"LogStream","user":"","apps":[]},{"streamID":22598,"type":"string","meta":"hand_gesture","user":"Testuser","apps":[]},{"streamID":43578,"type":"string","meta":"cv2imgin","user":"Testuser","apps":[]}],"ID":6}', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa7 in position 61: invalid start byte
+2025-04-24 20:37:57,191 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477189 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541477189 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541477188 receiving 22598 b57 h0 d49 from :\x00\x001\x00\x00\x00\x00\x001745541477191 receiving 22598 b246 h0 d238 from :\x00\x00;\x00\x00\x00\x00\x001745541477191 sending 22598 b246 h0 d238 to 127.0.0.1:58446\x00\x00\xee\x00FX\x00\x001745541477190 receiving 22598 b122 h0 d114 from :\x00\x00;\x00\x00\x00\x00\x001745541477190 sending 22598 b122 h0 d114 to 127.0.0.1:58446\x00\x00r\x00FX\x00\x001745541477189 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477186 receiving 22598 b163 h0 d155 from :', 293, 294, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xee in position 293: invalid continuation byte
+2025-04-24 20:37:57,192 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477191 receiving 22598 b177 h0 d169 from :\x00\x00;\x00\x00\x00\x00\x001745541477191 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541477190 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541477190 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477189 receiving 22598 b687 h0 d679 from :\x00\x001\x00\x00\x00\x00\x001745541477191 receiving 22598 b124 h0 d116 from :', 118, 119, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 118: invalid start byte
+2025-04-24 20:37:57,193 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-36' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477193 sending 22598 b191 h0 d183 to 127.0.0.1:58446\x00\x00\xb7\x00FX\x00\x001745541477191 sending 22598 b124 h0 d116 to 127.0.0.1:58446\x00\x00t\x00FX\x00\x001745541477191 receiving 22598 b175 h0 d167 from :\x00\x00;\x00\x00\x00\x00\x001745541477191 sending 22598 b175 h0 d167 to 127.0.0.1:58446', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb7 in position 61: invalid start byte
+2025-04-24 20:37:57,195 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-39' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477194 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541477193 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541477193 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477192 receiving 22598 b191 h0 d183 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:37:57,196 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-42' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477195 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541477195 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541477195 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477194 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:37:57,197 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-45' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477197 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541477196 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541477196 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477195 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:37:57,198 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-48' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477198 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541477197 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541477197 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477197 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:37:57,199 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-51' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477199 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541477198 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541477198 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477198 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:37:57,200 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-53' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541477200 receiving 22598 b177 h0 d169 from :\x00\x00;\x00\x00\x00\x00\x001745541477200 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541477199 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541477199 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541477199 receiving 22598 b177 h0 d169 from :', 118, 119, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 118: invalid start byte
+2025-04-24 20:37:59,379 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-55' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'lhoel\x00\x00/\x00\x00\x00\x00\x001745541479378 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479378 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}llhoe', 130, 131, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 130: invalid start byte
+2025-04-24 20:37:59,379 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-56' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541479378 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479378 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}lhleo\x00\x00/\x00\x00\x00\x00\x001745541479379 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479379 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 3}lehol\x00\x00/\x00\x00\x00\x00\x001745541479379 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479379 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}ohell\x00\x00/\x00\x00\x00\x00\x001745541479379 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479379 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}heoll', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:37:59,380 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-57' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541479379 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479379 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 6}elloh\x00\x00/\x00\x00\x00\x00\x001745541479379 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479379 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}heoll\x00\x00/\x00\x00\x00\x00\x001745541479379 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479379 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}leolh', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:37:59,380 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-58' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541479379 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479380 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}olleh\x00\x00/\x00\x00\x00\x00\x001745541479380 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479380 sending 43578 b26 h13 d5 to 127.0.0.1:58446\r\x00\x05\x00:\xaa\x00\x00{"count": 10}hello', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:37:59,382 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-64' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541479381 receiving 22598 b244 h0 d236 from :\x00\x00;\x00\x00\x00\x00\x001745541479381 sending 22598 b244 h0 d236 to 127.0.0.1:58446\x00\x00\xec\x00FX\x00\x001745541479380 receiving 22598 b120 h0 d112 from :\x00\x00;\x00\x00\x00\x00\x001745541479380 sending 22598 b120 h0 d112 to 127.0.0.1:58446\x00\x00p\x00FX\x00\x001745541479378 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541479378 sending 43578 b25 h12 d5 to 127.0.0.1:58446', 118, 119, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xec in position 118: invalid continuation byte
+2025-04-24 20:37:59,382 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-65' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541479382 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541479382 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541479381 receiving 22598 b124 h0 d116 from :\x00\x001\x00\x00\x00\x00\x001745541479382 receiving 22598 b191 h0 d183 from :\x00\x00;\x00\x00\x00\x00\x001745541479382 sending 22598 b191 h0 d183 to 127.0.0.1:58446\x00\x00\xb7\x00FX\x00\x001745541479381 sending 22598 b124 h0 d116 to 127.0.0.1:58446\x00\x00t\x00FX\x00\x001745541479381 receiving 22598 b244 h0 d236 from :\x00\x00;\x00\x00\x00\x00\x001745541479381 sending 22598 b244 h0 d236 to 127.0.0.1:58446', 295, 296, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb7 in position 295: invalid start byte
+2025-04-24 20:38:09,390 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-68' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541489390 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489390 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}ehllo\x00\x00/\x00\x00\x00\x00\x001745541489390 receiving 43578 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:09,391 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-69' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541489390 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}ohlel\x00\x00/\x00\x00\x00\x00\x001745541489390 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489390 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 3}lohle\x00\x00/\x00\x00\x00\x00\x001745541489390 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489390 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}olehl\x00\x00/\x00\x00\x00\x00\x001745541489391 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489391 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}helol\x00\x00/\x00\x00\x00\x00\x001745541489391 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489391 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 6}llheo', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:09,392 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-70' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541489391 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489391 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}holle\x00\x00/\x00\x00\x00\x00\x001745541489391 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489391 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}eolhl\x00\x00/\x00\x00\x00\x00\x001745541489391 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489391 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}lohle\x00\x00/\x00\x00\x00\x00\x001745541489391 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489391 sending 43578 b26 h13 d5 to 127.0.0.1:58446\r\x00\x05\x00:\xaa\x00\x00{"count": 10}lheol', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:09,393 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-74' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541489393 sending 22598 b244 h0 d236 to 127.0.0.1:58446\x00\x00\xec\x00FX\x00\x001745541489392 receiving 22598 b120 h0 d112 from :\x00\x00;\x00\x00\x00\x00\x001745541489392 sending 22598 b120 h0 d112 to 127.0.0.1:58446\x00\x00p\x00FX\x00\x001745541489389 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541489389 sending 43578 b25 h12 d5 to 127.0.0.1:58446', 61, 62, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xec in position 61: invalid continuation byte
+2025-04-24 20:38:09,395 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-82' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541489395 sending 22598 b442 h0 d434 to 127.0.0.1:58446\x00\x00\xb2\x01FX\x00\x001745541489393 sending 22598 b375 h0 d367 to 127.0.0.1:58446\x00\x00o\x01FX\x00\x001745541489393 receiving 22598 b131 h0 d123 from :\x00\x00;\x00\x00\x00\x00\x001745541489393 sending 22598 b131 h0 d123 to 127.0.0.1:58446\x00\x00{\x00FX\x00\x001745541489392 receiving 22598 b13 h0 d5 from :\x00\x008\x00\x00\x00\x00\x001745541489392 sending 22598 b13 h0 d5 to 127.0.0.1:58446\x00\x00\x05\x00FX\x00\x00oehll\x00\x00/\x00\x00\x00\x00\x001745541489393 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541489393 sending 22598 b57 h0 d49 to 127.0.0.1:58446', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb2 in position 61: invalid start byte
+2025-04-24 20:38:09,397 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-87' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541489396 sending 22598 b411 h0 d403 to 127.0.0.1:58446\x00\x00\x93\x01FX\x00\x001745541489392 receiving 22598 b244 h0 d236 from :\x00\x00/\x00\x00\x00\x00\x001745541489394 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541489394 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541489393 receiving 22598 b375 h0 d367 from :\x00\x00/\x00\x00\x00\x00\x001745541489395 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541489396 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541489394 receiving 22598 b442 h0 d434 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x93 in position 61: invalid start byte
+2025-04-24 20:38:09,398 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-88' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541489397 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541489397 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541489396 receiving 22598 b368 h0 d360 from :\x00\x001\x00\x00\x00\x00\x001745541489397 receiving 22598 b492 h0 d484 from :\x00\x00;\x00\x00\x00\x00\x001745541489397 sending 22598 b492 h0 d484 to 127.0.0.1:58446\x00\x00\xe4\x01FX\x00\x001745541489396 sending 22598 b368 h0 d360 to 127.0.0.1:58446\x00\x00h\x01FX\x00\x001745541489395 receiving 22598 b120 h0 d112 from :\x00\x00;\x00\x00\x00\x00\x001745541489395 sending 22598 b120 h0 d112 to 127.0.0.1:58446\x00\x00p\x00FX\x00\x001745541489394 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541489394 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00\x00\x00\x00\x001745541489395 receiving 22598 b234 h0 d226 from :\x00\x00;\x00\x00\x00\x00\x001745541489395 sending 22598 b234 h0 d226 to 127.0.0.1:58446\x00\x001\x00\x00\x00\x00\x001745541489396 receiving 22598 b411 h0 d403 from :', 295, 296, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe4 in position 295: invalid continuation byte
+2025-04-24 20:38:19,400 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-90' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541499400 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 0}ollhe\x00\x00/\x00\x00\x00\x00\x001745541499400 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499400 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}leolh', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:19,401 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-91' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541499401 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499401 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}lohel', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:19,402 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-92' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541499401 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499401 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 3}eollh\x00\x00/\x00\x00\x00\x00\x001745541499401 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499401 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}lleho\x00\x00/\x00\x00\x00\x00\x001745541499401 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499401 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}leohl\x00\x00/\x00\x00\x00\x00\x001745541499401 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499401 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 6}lloeh\x00\x00/\x00\x00\x00\x00\x001745541499401 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499401 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}elohl\x00\x00/\x00\x00\x00\x00\x001745541499402 receiving 43578 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:19,402 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-93' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541499402 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}olhel\x00\x00/\x00\x00\x00\x00\x001745541499402 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499402 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}olhle\x00\x00/\x00\x00\x00\x00\x001745541499402 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541499402 sending 43578 b26 h13 d5 to 127.0.0.1:58446\r\x00\x05\x00:\xaa\x00\x00{"count": 10}lehlo\x00\x00/\x00\x00\x00\x00\x001745541499402 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541499402 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541499400 receiving 43578 b25 h12 d5 from :', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:29,407 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-97' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509407 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}holel', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:29,408 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-98' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509407 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509407 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}loehl\x00\x00/\x00\x00\x00\x00\x001745541509407 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509407 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 3}lhole\x00\x00/\x00\x00\x00\x00\x001745541509407 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509407 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}loleh\x00\x00/\x00\x00\x00\x00\x001745541509407 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509407 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}eohll', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:29,408 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-99' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509407 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509407 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 6}hlelo\x00\x00/\x00\x00\x00\x00\x001745541509408 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509408 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}heoll\x00\x00/\x00\x00\x00\x00\x001745541509408 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509408 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}elhol\x00\x00/\x00\x00\x00\x00\x001745541509408 receiving 43578 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:29,409 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-100' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509408 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}llhoe\x00\x00/\x00\x00\x00\x00\x001745541509408 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509408 sending 43578 b26 h13 d5 to 127.0.0.1:58446\r\x00\x05\x00:\xaa\x00\x00{"count": 10}hello\x00\x001\x00\x00\x00\x00\x001745541509408 receiving 22598 b120 h0 d112 from :\x00\x00;\x00\x00\x00\x00\x001745541509408 sending 22598 b120 h0 d112 to 127.0.0.1:58446\x00\x00p\x00FX\x00\x001745541509406 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541509406 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x00\x00.\x00\x00\x00\x00\x001745541509408 receiving 22598 b13 h0 d5 from :', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:29,410 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-103' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509409 sending 22598 b252 h0 d244 to 127.0.0.1:58446\x00\x00\xf4\x00FX\x00\x001745541509408 sending 22598 b13 h0 d5 to 127.0.0.1:58446\x00\x00\x05\x00FX\x00\x00olhel\x00\x00/\x00\x00\x00\x00\x001745541509408 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541509408 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541509406 receiving 43578 b25 h12 d5 from :', 61, 62, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf4 in position 61: invalid continuation byte
+2025-04-24 20:38:29,412 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-111' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509412 sending 22598 b187 h0 d179 to 127.0.0.1:58446\x00\x00\xb3\x00FX\x00\x001745541509411 sending 22598 b120 h0 d112 to 127.0.0.1:58446\x00\x00p\x00FX\x00\x001745541509410 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541509410 sending 22598 b57 h0 d49 to 127.0.0.1:58446', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb3 in position 61: invalid start byte
+2025-04-24 20:38:29,413 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-112' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509412 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541509412 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541509411 receiving 22598 b57 h0 d49 from :\x00\x001\x00\x00\x00\x00\x001745541509412 receiving 22598 b177 h0 d169 from :\x00\x00;\x00\x00\x00\x00\x001745541509412 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541509411 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541509409 receiving 22598 b252 h0 d244 from :\x00\x00/\x00\x00\x00\x00\x001745541509411 receiving 22598 b57 h0 d49 from :', 293, 294, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 293: invalid start byte
+2025-04-24 20:38:29,413 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-113' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541509412 receiving 22598 b179 h0 d171 from :\x00\x00;\x00\x00\x00\x00\x001745541509412 sending 22598 b179 h0 d171 to 127.0.0.1:58446\x00\x00\xab\x00FX\x00\x001745541509411 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541509410 receiving 22598 b120 h0 d112 from :\x00\x001\x00\x00\x00\x00\x001745541509411 receiving 22598 b187 h0 d179 from :', 118, 119, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xab in position 118: invalid start byte
+2025-04-24 20:38:39,417 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-115' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541519417 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 0}leolh', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:39,418 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-116' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541519417 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519417 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}ohlel\x00\x00/\x00\x00\x00\x00\x001745541519417 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519417 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}lheol\x00\x00/\x00\x00\x00\x00\x001745541519417 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519417 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 3}eohll\x00\x00/\x00\x00\x00\x00\x001745541519418 receiving 43578 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:39,418 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-117' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541519418 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}olelh\x00\x00/\x00\x00\x00\x00\x001745541519418 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519418 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}lhleo\x00\x00/\x00\x00\x00\x00\x001745541519418 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519418 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 6}lehol\x00\x00/\x00\x00\x00\x00\x001745541519418 receiving 43578 b25 h12 d5 from :', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:39,418 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-118' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541519418 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}hloel\x00\x00/\x00\x00\x00\x00\x001745541519418 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519418 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}olhle\x00\x00/\x00\x00\x00\x00\x001745541519418 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519418 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}ehlol\x00\x00/\x00\x00\x00\x00\x001745541519418 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541519418 sending 43578 b26 h13 d5 to 127.0.0.1:58446\r\x00\x05\x00:\xaa\x00\x00{"count": 10}ohlle', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:39,420 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-124' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541519420 receiving 22598 b175 h0 d167 from :\x00\x00;\x00\x00\x00\x00\x001745541519420 sending 22598 b175 h0 d167 to 127.0.0.1:58446\x00\x00\xa7\x00FX\x00\x001745541519418 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541519418 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541519416 receiving 43578 b25 h12 d5 from :', 118, 119, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa7 in position 118: invalid start byte
+2025-04-24 20:38:39,421 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-125' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541519420 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541519420 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541519420 receiving 22598 b124 h0 d116 from :\x00\x001\x00\x00\x00\x00\x001745541519420 receiving 22598 b191 h0 d183 from :\x00\x00;\x00\x00\x00\x00\x001745541519420 sending 22598 b191 h0 d183 to 127.0.0.1:58446\x00\x00\xb7\x00FX\x00\x001745541519420 sending 22598 b124 h0 d116 to 127.0.0.1:58446\x00\x00t\x00FX\x00\x001745541519419 receiving 22598 b175 h0 d167 from :\x00\x00;\x00\x00\x00\x00\x001745541519419 sending 22598 b175 h0 d167 to 127.0.0.1:58446', 295, 296, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb7 in position 295: invalid start byte
+2025-04-24 20:38:49,428 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-126' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541529428 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529428 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 0}lohle', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:49,429 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-127' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541529428 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529428 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}leohl\x00\x00/\x00\x00\x00\x00\x001745541529428 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529428 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}lleho\x00\x00/\x00\x00\x00\x00\x001745541529429 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529429 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 3}elhol\x00\x00/\x00\x00\x00\x00\x001745541529429 receiving 43578 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:49,429 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-128' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541529429 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}lhloe\x00\x00/\x00\x00\x00\x00\x001745541529429 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529429 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}lolhe\x00\x00/\x00\x00\x00\x00\x001745541529429 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529429 sending 43578 b25 h12 d5 to 127.0.0.1:58446', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:49,430 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-129' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'lleoh\x00\x00/\x00\x00\x00\x00\x001745541529429 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529429 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}holle\x00\x00/\x00\x00\x00\x00\x001745541529430 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529430 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}ehllo\x00\x00/\x00\x00\x00\x00\x001745541529430 receiving 43578 b25 h12 d5 from :', 130, 131, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 130: invalid start byte
+2025-04-24 20:38:49,430 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-130' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541529430 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}lhloe\x00\x00/\x00\x00\x00\x00\x001745541529430 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541529430 sending 43578 b26 h13 d5 to 127.0.0.1:58446\r\x00\x05\x00:\xaa\x00\x00{"count": 10}lhleo', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:59,439 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-132' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541539439 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 0}ohlel', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:59,440 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-133' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541539439 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539439 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}eholl\x00\x00/\x00\x00\x00\x00\x001745541539439 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539439 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}oehll\x00\x00/\x00\x00\x00\x00\x001745541539439 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539439 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 3}olhel\x00\x00/\x00\x00\x00\x00\x001745541539439 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539439 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}ellho', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:59,440 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-134' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541539439 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539440 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}oelhl\x00\x00/\x00\x00\x00\x00\x001745541539440 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539440 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 6}lehol\x00\x00/\x00\x00\x00\x00\x001745541539440 receiving 43578 b25 h12 d5 from :', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:38:59,440 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-135' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541539440 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}elolh\x00\x00/\x00\x00\x00\x00\x001745541539440 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539440 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}llohe\x00\x00/\x00\x00\x00\x00\x001745541539440 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539440 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}leolh\x00\x00/\x00\x00\x00\x00\x001745541539440 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541539440 sending 43578 b26 h13 d5 to 127.0.0.1:58446', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:38:59,443 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-141' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541539442 sending 22598 b188 h0 d180 to 127.0.0.1:58446\x00\x00\xb4\x00FX\x00\x00elloh\x00\x00/\x00\x00\x00\x00\x001745541539440 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541539441 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541539438 receiving 43578 b25 h12 d5 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb4 in position 61: invalid start byte
+2025-04-24 20:38:59,443 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-142' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541539443 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541539443 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541539442 receiving 22598 b124 h0 d116 from :\x00\x001\x00\x00\x00\x00\x001745541539443 receiving 22598 b248 h0 d240 from :\x00\x00;\x00\x00\x00\x00\x001745541539443 sending 22598 b248 h0 d240 to 127.0.0.1:58446\x00\x00\xf0\x00FX\x00\x001745541539442 sending 22598 b124 h0 d116 to 127.0.0.1:58446\x00\x00t\x00FX\x00\x001745541539441 receiving 22598 b188 h0 d180 from :\x00\x00;\x00\x00\x00\x00\x001745541539441 sending 22598 b188 h0 d180 to 127.0.0.1:58446\x00\x001\x00\x00\x00\x00\x001745541539442 receiving 22598 b188 h0 d180 from :', 295, 296, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf0 in position 295: invalid continuation byte
+2025-04-24 20:39:09,449 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-144' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549449 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 0}hlloe', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:39:09,450 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-145' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549449 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549449 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 1}elhlo\x00\x00/\x00\x00\x00\x00\x001745541549449 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549450 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 2}heoll\x00\x00/\x00\x00\x00\x00\x001745541549450 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549450 sending 43578 b25 h12 d5 to 127.0.0.1:58446', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:39:09,451 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-146' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'ollhe\x00\x00/\x00\x00\x00\x00\x001745541549450 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549450 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 4}llhoe\x00\x00/\x00\x00\x00\x00\x001745541549450 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549450 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 5}loelh', 130, 131, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 130: invalid start byte
+2025-04-24 20:39:09,451 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-147' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549450 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549450 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 6}hlleo\x00\x00/\x00\x00\x00\x00\x001745541549450 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549451 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 7}helol', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:39:09,452 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-149' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549451 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 8}lleho', 62, 63, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 62: invalid start byte
+2025-04-24 20:39:09,452 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-150' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549452 receiving 43578 b25 h12 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549452 sending 43578 b25 h12 d5 to 127.0.0.1:58446\x0c\x00\x05\x00:\xaa\x00\x00{"count": 9}lehlo\x00\x00/\x00\x00\x00\x00\x001745541549452 receiving 43578 b26 h13 d5 from :\x00\x009\x00\x00\x00\x00\x001745541549452 sending 43578 b26 h13 d5 to 127.0.0.1:58446\r\x00\x05\x00:\xaa\x00\x00{"count": 10}ehlol', 117, 118, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xaa in position 117: invalid start byte
+2025-04-24 20:39:09,454 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-154' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549453 sending 22598 b474 h0 d466 to 127.0.0.1:58446\x00\x00\xd2\x01FX\x00\x001745541549453 receiving 22598 b350 h0 d342 from :\x00\x00;\x00\x00\x00\x00\x001745541549453 sending 22598 b350 h0 d342 to 127.0.0.1:58446\x00\x00V\x01FX\x00\x001745541549452 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541549452 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541549448 receiving 43578 b25 h12 d5 from :\x00\x00/\x00\x00\x00\x00\x001745541549452 receiving 22598 b55 h0 d47 from :\x00\x009\x00\x00\x00\x00\x001745541549452 sending 22598 b55 h0 d47 to 127.0.0.1:58446\x00\x00/\x00FX\x00\x001745541549451 receiving 43578 b25 h12 d5 from :', 61, 62, 'invalid continuation byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd2 in position 61: invalid continuation byte
+2025-04-24 20:39:09,455 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-157' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549455 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549454 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549454 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549453 receiving 22598 b474 h0 d466 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:39:09,457 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-160' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549456 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549455 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549455 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549455 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:39:09,458 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-163' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549457 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549457 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549457 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549456 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:39:09,459 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-166' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549459 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549458 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549458 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549457 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:39:09,460 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-169' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549460 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549459 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549459 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549458 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:39:09,461 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-172' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549461 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549460 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549460 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549460 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:39:09,463 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-175' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549462 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549461 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549461 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549461 receiving 22598 b177 h0 d169 from :', 61, 62, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 61: invalid start byte
+2025-04-24 20:39:09,464 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-177' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541549464 receiving 22598 b177 h0 d169 from :\x00\x00;\x00\x00\x00\x00\x001745541549464 sending 22598 b177 h0 d169 to 127.0.0.1:58446\x00\x00\xa9\x00FX\x00\x001745541549463 receiving 22598 b57 h0 d49 from :\x00\x009\x00\x00\x00\x00\x001745541549463 sending 22598 b57 h0 d49 to 127.0.0.1:58446\x00\x001\x00FX\x00\x001745541549462 receiving 22598 b177 h0 d169 from :', 118, 119, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa9 in position 118: invalid start byte
+2025-04-24 20:39:12,597 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-179' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,598 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-180' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,599 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-181' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,600 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-182' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,601 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-183' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,601 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-184' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,603 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-186' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=UnicodeDecodeError('utf-8', b'1745541552601 listing streams\x00\x00\x8a\x00\x00\x00\x00\x001745541552601 token: 1a2f1c7ad5ac7935fb8455c37913f65b0a6f246e475826ba4fbf658ddbdce0e5, user: Testuser, streams: 49459, time: 1745541466874\x00\x00\x8a\x00\x00\x00\x00\x001745541552602 token: 662431026625501bbd8f6ae1409e71e0c437642712db5c1df691dedb93ad45c4, user: Testuser, streams: 43578, time: 1745541469273\x00\x00>\x00\x00\x00\x00\x001745541552602 token: !log, app: LogStream, streams: 0, time: 0\x00\x00@\x00\x00\x00\x00\x001745541552602 token: !dfshdgs, app: Test App, streams: , time: 0\x00\x00B\x00\x00\x00\x00\x001745541552602 token: !kljhkl, app: Vive Avatar, streams: , time: 0\x00\x00R\x00\x00\x00\x00\x001745541552602 token: !gfhdgh, app: Hanging out on the Holodeck, streams: , time: 0\x00\x00\x93\x00\x00\x00\x00\x001745541552602 source: 0, User: undefined, IP: :0, proto: local, workspace: Log, alert: false, type: LogStream, time: 1745541552602, from: LogStream\x00\x00\x8d\x00\x00\x00\x00\x001745541552602 source: 43578, User: undefined, IP: :, proto: tcp, workspace: Holodeck, alert: false, type: string, time: 1745541549452, from: \x00\x00{\x00\x00\x00\x00\x001745541552602 target: 49459, IP: 127.0.0.1:58446, proto: tcp, workspace: Holodeck, alert: true, type: , time: 1745541552602', 31, 32, 'invalid start byte')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 29, in byte_to_string
+    string_data = data_bytes.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8a in position 31: invalid start byte
+2025-04-24 20:39:12,603 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-187' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,632 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-188' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor
+2025-04-24 20:39:12,633 [ERROR] Task exception was never retrieved
+future: <Task finished name='Task-189' coro=<receiver_callback() done, defined at /home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py:36> exception=OSError(9, 'Bad file descriptor')>
+Traceback (most recent call last):
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/resources/reqs.py", line 45, in receiver_callback
+    await variables.user_cb(message, streamID, header)
+  File "/home/seanadmin/HSRN/corelink-plugin-poc/connect.py", line 32, in byte_to_string
+    await corelink.send(senderID, string_data)
+  File "/home/seanadmin/HSRN/corelink-pyclient/python/package/Corelink/src/corelink/corelink.py", line 148, in send
+    await loop.sock_sendall(stream['connection'], message)  # Use sock_sendall to ensure all data is sent
+  File "/home/seanadmin/anaconda3/envs/cl-poc/lib/python3.10/asyncio/selector_events.py", line 441, in sock_sendall
+    n = sock.send(data)
+OSError: [Errno 9] Bad file descriptor

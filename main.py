@@ -3,7 +3,38 @@ from ultralytics import YOLO
 
 from vision.human_detection import find_human
 from vision.hand_detection import detect_hands_in_box
-from handestimation import inference
+# from handestimation import inference
+
+import mediapipe as mp
+from asyncio import sleep
+from transformers import pipeline
+from PIL import Image
+import cv2
+pipe = pipeline("image-classification", model="dima806/hand_gestures_image_detection", use_fast=True)
+
+mp_hands_draw = mp.solutions.drawing_utils
+mp_hands = mp.solutions.hands
+
+def inference(image):
+    """
+    Perform inference on the given image using the hand gesture classification model.
+
+    Args:
+        image (numpy.ndarray): The input image in BGR format.
+
+    Returns:
+        str: The predicted hand gesture label.
+    """
+    cv2_image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    pil_image = Image.fromarray(cv2_image_rgb)
+    # Perform inference
+    results = pipe(pil_image)
+    # Extract the label from the results
+    label = results[0]['label']
+    print(label)
+    
+    return label
+
 
 def main():
     cap = cv2.VideoCapture(0)
