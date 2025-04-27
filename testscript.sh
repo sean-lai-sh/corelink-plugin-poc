@@ -19,5 +19,5 @@ echo "Waiting $WAIT_SECONDS seconds for sender to initialize..."
 sleep "$WAIT_SECONDS"
 
 # Run test script
-echo "Starting test.py..."
-python test.py
+echo "Starting connect.py..."
+python connect.py
