@@ -26,8 +26,10 @@ senderID = None
 receiverID = None
 
 async def byte_to_string(data_bytes , streamID, header):
+    # print(data_bytes)
     string_data = data_bytes.decode('utf-8')
     print("RECIEVING WORD ", string_data)
+    logging.info(string_data)
     # print(await corelink.list_streams(workspaces=["Holodeck"]))
     await corelink.send(senderID, string_data) 
 
