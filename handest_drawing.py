@@ -26,11 +26,11 @@ from vision.hand_detection import detect_hands_in_box
 mp_hands_draw = mp.solutions.drawing_utils
 
 hands = mp.solutions.hands.Hands(
-        static_image_mode=False,
-        max_num_hands=2,
-        min_detection_confidence=0.5,
-        min_tracking_confidence=0.5
-    )
+    static_image_mode=False,
+    max_num_hands=2,
+    min_detection_confidence=0.5,
+    min_tracking_confidence=0.5
+)
 
 senderID = None
 receiverID = None
@@ -54,7 +54,7 @@ def inference(image):
     """
     #Check human is in frame
     label = ""
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     results = model(image, conf=0.5)
     found, human_box = find_human(results)
     

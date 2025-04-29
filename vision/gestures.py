@@ -1,5 +1,7 @@
 from utils.math_utils import euclidean
-
+'''
+Deprecated over Smart Mediapipe Transformer Version
+'''
 def is_finger_extended(landmarks, tip_id, base_id, wrist_id=0):
     wrist = landmarks[wrist_id]
     base = landmarks[base_id]
