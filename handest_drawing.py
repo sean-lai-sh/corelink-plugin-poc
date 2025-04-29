@@ -24,7 +24,13 @@ import mediapipe as mp
 from vision.hand_detection import detect_hands_in_box
 
 mp_hands_draw = mp.solutions.drawing_utils
-mp_hands = mp.solutions.hands
+
+hands = mp.solutions.hands.Hands(
+        static_image_mode=False,
+        max_num_hands=2,
+        min_detection_confidence=0.5,
+        min_tracking_confidence=0.5
+    )
 
 senderID = None
 receiverID = None
@@ -67,7 +73,7 @@ def inference(image):
     print("Recognized Hand label:", label)
     # Send the label to the Corelink serve
     corelink.send(senderID, label)
-    frame, gesture = detect_hands_in_box(frame, human_box, mp_hands)
+    frame, gesture = detect_hands_in_box(frame, human_box, hands)
     retImg = frame
     return retImg,label
 

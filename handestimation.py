@@ -102,6 +102,7 @@ async def process_chunk(data_bytes, streamID, header):
         await vprint(f"Received complete image of size: {file_size} bytes (index {index})")
         
         # OPTIONAL: Process or display
+        
         cv2.imshow("Received Image", img)
         cv2.waitKey(1)
 
