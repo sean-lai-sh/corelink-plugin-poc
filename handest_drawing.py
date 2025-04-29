@@ -39,8 +39,6 @@ data_type = 'cv2imgin'
 current_buffer = bytearray()
 current_counter = 0
 current_bytes = 0
-
-cap = cv2.VideoCapture(0)
 model = YOLO("yolov8n.pt")
 model.fuse()
 
@@ -73,8 +71,11 @@ def inference(image):
     print("Recognized Hand label:", label)
     # Send the label to the Corelink serve
     corelink.send(senderID, label)
-    frame, gesture = detect_hands_in_box(frame, human_box, hands)
-    retImg = frame
+    if found and label != "no_gesture":
+        frame, gesture = detect_hands_in_box(image, human_box, hands)
+        retImg = frame
+    else:
+        retImg = image
     return retImg,label
 
 VERBOSE = os.getenv("VERBOSE", "False") == "True" or "--verbose" in sys.argv

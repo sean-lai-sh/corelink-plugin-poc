@@ -108,6 +108,8 @@ async def main():
         # if control C is pressed, break the loop
         if cv2.waitKey(1) & 0xFF == 27:
             corelink.disconnect_senders([senderID])
+    cap.release()
+    cv2.destroyAllWindows()
     
         
         
