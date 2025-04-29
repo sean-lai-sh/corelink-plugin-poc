@@ -14,6 +14,8 @@ pipe = pipeline("image-classification", model="dima806/hand_gestures_image_detec
 
 mp_hands_draw = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
+model = YOLO("yolov8n.pt")
+model.fuse()
 
 def inference(image):
     """
@@ -25,21 +27,24 @@ def inference(image):
     Returns:
         str: The predicted hand gesture label.
     """
-    cv2_image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    pil_image = Image.fromarray(cv2_image_rgb)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    results = model(image, conf=0.5)
+    found, human_box = find_human(results)
+    if not found:
+        return "call"
+    pil_image = Image.fromarray(image)
     # Perform inference
     results = pipe(pil_image)
     # Extract the label from the results
     label = results[0]['label']
-    print(label)
-    
+    print("Recognized Hand label:", label)
+    # Send the label to the Corelink serve
+    #corelink.send(senderID, label, type="hand_gesture")
     return label
 
 
 def main():
     cap = cv2.VideoCapture(0)
-    model = YOLO("yolov8n.pt")
-    model.fuse()
 
     if not cap.isOpened():
         print("Error: Could not open video.")
@@ -57,12 +62,7 @@ def main():
                 print("Error: Could not read frame.")
                 break
 
-            results = model(frame, conf=0.5)
-            found, human_box = find_human(results)
-
-            if found:
-                frame, gesture = detect_hands_in_box(frame, human_box, hands)
-                print(inference(frame))
+            inference(frame)
 
             cv2.imshow("YOLO + MediaPipe Hands", frame)
             key = cv2.waitKey(1) & 0xFF

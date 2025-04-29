@@ -45,7 +45,7 @@ async def main():
         # Send data to the data channel , loop through queue and map to streamType and relay to subscriber
         count = count + 1
         if (count > 10):
-            time.sleep(10000)
+            time.sleep(1/30)
             count = 0
 
 
