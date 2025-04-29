@@ -25,7 +25,7 @@ chunk_size = 1024  # 1 KB
 #         raise ValueError("Failed to compress frame")
 #     return encoded_img.tobytes()
 
-def compress_frame(frame, target_size_bytes=2048, quality=30, scale=1.0):
+def compress_frame(frame, target_size_bytes=4*1024, quality=50, scale=1.0):
     """Compress frame, scaling and adjusting to target size."""
     encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), quality]
 

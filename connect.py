@@ -78,14 +78,19 @@ async def process_chunk(data_bytes, streamID, header):
     
 
 
-async def byte_to_string(message , streamID, header):
+async def data_callback(message , streamID, header):
+    '''
+    Callback function to process incoming data from the stream.
+    Only runs if the stream type matches the expected data type.
+    Args:
+        message (bytes): The incoming data message.
+        streamID (str): The ID of the stream.
+        header (str): The header information for the data.
+    '''
     streamInfo = await corelink.stream_info(streamID)
     if streamInfo["type"] == data_type:
         await process_chunk(message, streamID, header)
-        #await corelink.send(senderID, decoded_message)
-        # vprint("Decoded message: ", decoded_message)
         print("Index of Data", header)
-        #print(streamInfo)
     else:
         vprint(streamInfo)
     
@@ -100,7 +105,7 @@ async def main():
     # Init the corelink connection via control stream and user pw
     # 20012 is the default port for the control stream (this is a ws connection)
     await corelink.connect("Testuser", "Testpassword", "127.0.0.1", "20012") #TODO: For prod env switch to .env vars since we cannot assume config of external corelink server
-    await corelink.set_data_callback(byte_to_string) #
+    await corelink.set_data_callback(data_callback) #
     await corelink.set_server_callback(updateCallback, key="update")
     print(await corelink.list_streams(workspaces=["Holodeck"]))
     global senderID

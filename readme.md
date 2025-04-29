@@ -26,7 +26,7 @@ graph TD
     (Sender)"] --> B["YOLOv8 Human Detection
     (Plugin 1)
     Sends frame data + boxes"]
-    B --> C["MediaPipe Hand Landmark Detection
+    B --> C["MediaPipe Transformer based Hand Landmark Detection
     (Plugin 2)
     Sends frame + array information"]
     C --> D["Gesture Classifier
@@ -37,6 +37,8 @@ graph TD
     C --> F["Overlayed input
     (Reciever 2)"]
 ```
+
+* note that plugin 1 and 2 are merged in this branch version. We will create an automation capability soon should there be demand.
 
 ### How the classifier works:
 
